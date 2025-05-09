@@ -1,8 +1,6 @@
 # Password_Manager
 I created a simple password manager within 20 hours
 I'm excited to share my latest project - a simple yet secure password manager that I built using Python! This project showcases the power of cryptography in protecting sensitive information. 
-
-So my motivation began some time ago after picking up myself and cybersecurity back up, which I had brushed aside because of my time-consuming job role with Chivita. I decided I needed to do more projects and have more hands-on practicals. Hence this.😁
 My motivation for creating this password manager was to learn about secure data storage and encryption. I wanted to understand how it works and put it into practice. I'm passionate about cybersecurity, and this project was a great opportunity to dive deeper into the world of encryption.
 
 Why I chose Fernet and RSA
