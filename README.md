@@ -1,37 +1,47 @@
-# Password_Manager
-I created a simple password manager within 20 hours
-I'm excited to share my latest project - a simple yet secure password manager that I built using Python! This project showcases the power of cryptography in protecting sensitive information. 
-My motivation for creating this password manager was to learn about secure data storage and encryption. I wanted to understand how it works and put it into practice. I'm passionate about cybersecurity, and this project was a great opportunity to dive deeper into the world of encryption.
-
-Why I chose Fernet and RSA
-I chose Fernet for the symmetric encryption because it's fast and secure with very little fuss. However, I realized that using only symmetric encryption wouldn't be enough, and it would be too simple, as the key exchange would be a vulnerability. That's why I decided to use RSA asymmetric encryption to exchange the symmetric key securely. This way, I can leverage the speed of symmetric encryption while ensuring the security of the key exchange.
-
-The Code
-
-![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/1.png)
-
-
+# Secure Password_Manager
+A Password Manager i made using python and cryprography libraries to securely store and generate passwors.
 
 Key Features
-It includes password regeneration, password storage for both the website domain name and password, password retrieval, and using the master password to derive the key through PBKDF2HMAC which hashes the derived key and encrypts and sends it to Fernet. At a point, I wanted to add a challenge-based MFA, but I decided to keep it simple and keep the creation timeframe to 24 hours.
+1. Password generation with customizable length.
+2. Password storage for both the website domain name and password using Fernet keys.
+3. Password retrieval, and using the master password to derive the key through PBKDF2HMAC which hashes the derived key and encrypts it and sends it to Fernet.
+4. RSA key pair generation for encryption of the Fernet keys.
+5. At a point, I wanted to add a challenge-based MFA, but I decided to keep it simple and keep the creation timeframe to 24 hours.
+6. User-friendly menu-driven interface.
 
-How it Works
-1. Enter a master password to unlock the system.
-2. Choose an option:
- 1. Add a password: Enter a website name and password (or generate one).
- 2. Retrieve a password: Enter a website name to retrieve its password.
- 3. Exit: Quit the program.
+![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/Final%20Result.png)
 
-Relevant Code Snippets
+How It Works
+1. Derives a key from Master Password using PBKDF2, which is hashed by HMAC
+![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/1.png)
+2. Encrypts Password with fernet, stores it in a file and salts it.
+3. Generates RSA key pair to securely exchange Fernet key
+![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/2.png)
+4. Encrypts Fernet Key using RSA public key
+![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/3.png)
+5. Retrieves passwords by decrypting the stored data using the master key
+![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/4.png)
+![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/5.png)
+![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/6.png)
+![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/7.png)
+![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/8.png)
 
-- Deriving a key from the master password: key = derive_key_from_password(master_password, salt)
-- This code uses PBKDF2HMAC to derive a key from the master password and salt.
-- Encrypting the symmetric key with RSA: encrypted_fernet_key = encrypt_fernet_key(fernet_key, public_key)
-- This code uses RSA encryption to exchange the symmetric key securely.
-- Encrypting and decrypting passwords: encrypted_data = encrypt_data(data_to_encrypt, decrypted_fernet_key) and decrypted_pair = decrypt_data(encrypted_pair, decrypted_fernet_key)
-- These codes use Fernet symmetric encryption to protect passwords.
+
+Usage
+1. Run the script and enter your master password
+2. Choose to add a new password or retrieve an existing one
+3. Follow the prompts to generate or enter new password
+
+Security Measures
+1. Uses Fernet symmetric encryption for password storage
+2. RSA key pair for encrypting Fernet keys
+3. PBKDF2 key derivation for password protection
+4. Salt generation for added security
+
+Requirements
+Pythin and Cryptography Library
 
 Limitations 
 Please note that this password manager is a simple project and not a production-ready solution. It's not recommended to use this for storing sensitive information in a real-world scenario, as it lacks the complexity and robustness of established password managers.
 
-Takeaway: This project demonstrates the potential of cryptography in building secure applications. I'm proud to have completed it, and I'm excited to continue exploring the world of cybersecurity. Well, as regards the timeline, if I add the time for the research, it would probably be 23 hours, but...😎😁
+Takeaway: This project demonstrates the potential of cryptography in building secure applications. I'm proud to have completed it, and I'm excited to continue exploring the world of cybersecurity.
