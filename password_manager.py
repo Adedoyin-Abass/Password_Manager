@@ -79,7 +79,7 @@ def serialize_private_key(private_key):
     return private_key.private_bytes(
         encoding=serialization.Encoding.PEM,
         format=serialization.PrivateFormat.PKCS8,
-        encryption_algorithm=serialization.NoEncryption()  # Consider encrypting with a password later
+        encryption_algorithm=serialization.NoEncryption()
     )
 
 def deserialize_private_key(private_key_bytes):
