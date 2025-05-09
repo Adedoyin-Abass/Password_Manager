@@ -6,6 +6,12 @@ My motivation for creating this password manager was to learn about secure data 
 Why I chose Fernet and RSA
 I chose Fernet for the symmetric encryption because it's fast and secure with very little fuss. However, I realized that using only symmetric encryption wouldn't be enough, and it would be too simple, as the key exchange would be a vulnerability. That's why I decided to use RSA asymmetric encryption to exchange the symmetric key securely. This way, I can leverage the speed of symmetric encryption while ensuring the security of the key exchange.
 
+The Code
+
+![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/1.png)
+
+
+
 Key Features
 It includes password regeneration, password storage for both the website domain name and password, password retrieval, and using the master password to derive the key through PBKDF2HMAC which hashes the derived key and encrypts and sends it to Fernet. At a point, I wanted to add a challenge-based MFA, but I decided to keep it simple and keep the creation timeframe to 24 hours.
 
