@@ -14,7 +14,7 @@ Key Features
 Installation
 To run this project, you'll need to install the following dependecies:
   1. Cryptography library
-     I used zsh, so you use pip install cryptography. You can use it bash too or any other linux shell
+     I used zsh, so you use pip install cryptography. You can use it with bash too or any other linux shell
   2. Python
      To run this on linux, you should use the script sudo apt install python3
      To run on macOS use brew install python
