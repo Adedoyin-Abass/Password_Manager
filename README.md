@@ -52,3 +52,12 @@ Please note that this password manager is a simple project and not a production-
 
 ## Takeaway
 This project demonstrates the potential of cryptography in building secure applications. I'm proud to have completed it, and I'm excited to continue exploring the world of cybersecurity.
+
+## Contributing
+Feel free to fork this repository, make improvements, and submit pull requests. Any contributions are welcome!
+
+## License
+This project is open source and available under the MIT License.
+
+## Author
+Adedoyin Abass / https://github.com/Ubuntu-Dekiru
