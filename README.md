@@ -1,11 +1,11 @@
 # Secure Password_Manager
-A Password Manager i made using python and cryprography libraries to securely store and generate passwors.
+A Password Manager I made using `Python` and `cryptography` libraries to securely store and generate passwors.
 
 ## Key Features
 1. Password generation with customizable length.
-2. Password storage for both the website domain name and password using Fernet keys.
+2. Password storage for both the website domain name and password using `Fernet keys`.
 3. Password retrieval
-5. RSA key pair generation for encryption of the Fernet keys.
+5. `RSA key pair` generation for encryption of the `Fernet keys`.
 7. User-friendly menu-driven interface.
 8. `Master password` -> `PBKDF2HMAC` -> `Derived key` -> `Decrypt encrypted Fernet key (using RSA private key)` -> `Fernet key` -> `Decrypt password data`
 
@@ -14,10 +14,10 @@ A Password Manager i made using python and cryprography libraries to securely st
 ## Installation
 To run this project, you'll need to install the following dependencies:
   1. Python:
-     To run this on `Linux`, you should use the script `sudo apt install python3`.
-     To run on `macOS`, use `brew install python`.
+     * To run this on `Linux`, you should use the script `sudo apt install python3`.
+     * To run on `macOS`, use `brew install python`.
   3. Cryptography library:
-     In your terminal, use `pip install cryptography`.
+     * In your terminal, use `pip install cryptography`.
 
 ## How It Works
 1. Derives a key from the Master Password using `PBKDF2`, which is hashed by `HMAC`
