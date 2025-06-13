@@ -13,10 +13,10 @@ A Password Manager i made using python and cryprography libraries to securely st
 
 ## Installation
 To run this project, you'll need to install the following dependencies:
-  1. Python
-     To run this on `Linux`, you should use the script `sudo apt install python3`
-     To run on `macOS`, use `brew install python`
-  2. Cryptography library
+  1. Python:
+     To run this on `Linux`, you should use the script `sudo apt install python3`.
+     To run on `macOS`, use `brew install python`.
+  3. Cryptography library:
      In your terminal, use `pip install cryptography`.
 
 ## How It Works
