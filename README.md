@@ -1,5 +1,5 @@
-# Secure Password_Manager
-A Password Manager I made using `Python` and `cryptography` libraries to securely store and generate passwors.
+# Secure Password Manager
+A Password Manager I made using `Python` and `cryptography` libraries to securely store and generate passwords.
 
 ## Key Features
 1. Password generation with customizable length.
