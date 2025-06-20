@@ -9,7 +9,7 @@ A Password Manager I made using `Python` and `cryptography` libraries to securel
 7. User-friendly menu-driven interface.
 8. `Master password` -> `PBKDF2HMAC` -> `Derived key` -> `Decrypt encrypted Fernet key (using RSA private key)` -> `Fernet key` -> `Decrypt password data`
 
-![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/Final%20Result.png)
+![Alt text](https://github.com/Adedoyin-Abass/Password_Manager/blob/main/screenshots/Final%20Result.png)
 
 ## Installation
 To run this project, you'll need to install the following dependencies:
@@ -22,17 +22,13 @@ To run this project, you'll need to install the following dependencies:
 ## How It Works
 1. Derives a key from the Master Password using `PBKDF2`, which is hashed by `HMAC`
 2. Encrypts the password with `fernet`, stores it in a file, and salts it.
-![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/1.png)
+![Alt text](https://github.com/Adedoyin-AbassPassword_Manager/blob/main/screenshots/1.png)
 3. Generates an `RSA key pair` to securely exchange a `Fernet key`
-![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/2.png)
+![Alt text](https://github.com/Adedoyin-Abass/Password_Manager/blob/main/screenshots/2.png)
 4. Encrypts the `Fernet Key` using the `RSA public key`
-![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/3.png)
+![Alt text](https://github.com/Adedoyin-Abass/Password_Manager/blob/main/screenshots/3.png)
 5. Retrieves passwords by decrypting the stored data using the master key
-![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/4.png)
-![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/5.png)
-![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/6.png)
-![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/7.png)
-![Alt text](https://github.com/Ubuntu-Dekiru/Password_Manager/blob/main/screenshots/8.png)
+![Alt text](https://github.com/Adedoyin-AbassPassword_Manager/blob/main/screenshots/4.png)
 
 ## Usage
 1. Run the script and enter your master password
@@ -60,4 +56,4 @@ Feel free to fork this repository, make improvements, and submit pull requests. 
 This project is open source and available under the MIT License.
 
 ## Author
-Adedoyin Abass / https://github.com/Ubuntu-Dekiru
+Adedoyin Abass / https://github.com/Adedoyin-Abass
