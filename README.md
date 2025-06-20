@@ -28,7 +28,7 @@ To run this project, you'll need to install the following dependencies:
 4. Encrypts the `Fernet Key` using the `RSA public key`
 ![Alt text](https://github.com/Adedoyin-Abass/Password_Manager/blob/main/screenshots/3.png)
 5. Retrieves passwords by decrypting the stored data using the master key
-![Alt text](https://github.com/Adedoyin-AbassPassword_Manager/blob/main/screenshots/4.png)
+![Alt text](https://github.com/Adedoyin-Abass/Password_Manager/blob/main/screenshots/4.png)
 
 ## Usage
 1. Run the script and enter your master password
